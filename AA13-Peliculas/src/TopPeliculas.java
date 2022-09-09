@@ -55,6 +55,7 @@ public class TopPeliculas {
 		
 		for(Pelicula pelicula : listaPeliculas) {
 			bw.write(pelicula.toString()+"\n");
+			System.out.println(pelicula.toString());
 		}
 		
 		bw.close();
@@ -62,6 +63,7 @@ public class TopPeliculas {
 		sn.close();
 		
 		crearJenkins();
+		
 		
 		System.out.println("Lista ordenada y actualizada con éxito!");
 		
